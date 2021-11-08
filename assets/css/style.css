@@ -383,22 +383,17 @@ a, div {
     opacity: .5;
 }
 
-#adminbar .quicklinks li a:hover {
+#adminbar .quicklinks li:hover a {
     background: #2c3338;
 }
 
-#adminbar .quicklinks li a:hover .adminbar-name,
-#adminbar .quicklinks li a:hover .adminbar-image::before {
+#adminbar .quicklinks li:hover a .adminbar-name,
+#adminbar .quicklinks li:hover a .adminbar-image::before {
     color: #72aee6;
 }
 
 #adminbar .quicklinks li a.website-image {
     padding: 0 5px 0 7px;
-}
-
-
-#adminbar .quicklinks .menu-right {
-    
 }
 
 #adminbar .quicklinks .menu-right li {
@@ -426,6 +421,98 @@ a, div {
     float: none;
     display: inline;
 }
+
+#adminbar .quicklinks .adminbar-sub-menu {
+    display: none;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+    background: #2c3338;
+    position: absolute;
+}
+
+#adminbar .quicklinks li:hover .adminbar-sub-menu{
+    display: block;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul {
+    padding: 6px 0;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li {
+    float: none;
+    background: transparent;
+    text-indent: 0;
+    z-index: 99999;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li a {
+    min-width: 140px;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 2;
+    white-space: nowrap;
+    transition: all .1s ease-in-out;
+
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li:hover a {
+    color: #72aee6;
+}
+
+#adminbar .quicklinks .menu-right .adminbar-sub-menu {
+    right: 0;
+    left: auto;
+}
+
+#adminbar .quicklinks .menu-right .adminbar-sub-menu ul {
+    padding: 6px 0 12px;
+}
+
+#adminbar .quicklinks .menu-right .adminbar-sub-menu ul li a {
+    color: #c3c4c7;
+    color: rgba(240,246,252,.7);
+}
+
+#adminbar .quicklinks .menu-right .adminbar-sub-menu ul li:hover a {
+    color: #72aee6
+}
+
+#adminbar .quicklinks .menu-right .adminbar-sub-menu ul > li {
+    margin-left: 88px;
+    margin-right: 16px;
+    position: relative;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li img {
+    position: absolute;
+    left: -72px;
+    top: 4px;
+    width: 64px;
+    height: 64px;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li a span {
+    display: block;
+    background: transparent;
+    padding: 0;
+    height: 18px;
+    transition: all .1s ease-in-out;
+}
+
+#adminbar .quicklinks .adminbar-sub-menu ul li.adminbar-user-info {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
