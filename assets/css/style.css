@@ -258,6 +258,14 @@ button, input, select, textarea {
     margin-top: -8px;
 }
 
+#adminmenu-wrapper.collapse {
+    width: 36px;
+}
 
+#adminmenu-wrapper.collapse .menu-name,
+#adminmenu-wrapper.collapse .collapse-button-label {
+    position: absolute;
+    left: -999px;
+}
 
 

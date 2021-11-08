@@ -13,4 +13,16 @@ window.onload = function() {
             this.classList.add('active');
         });
     });
+
+    // collapse toggle #adminmenu 
+    const collapse_button = document.querySelector("#menu-collapse");
+    collapse_button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        
+        const adminmenu = document.querySelector("#adminmenu-wrapper");
+        adminmenu.classList.toggle("collapse");
+    });
+
+
 }
