@@ -38,13 +38,6 @@ a, div {
     outline: 0;
 }
 
-button, input, select, textarea {
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
 #container {
     height: auto;
     min-height: 100%;
@@ -58,6 +51,7 @@ button, input, select, textarea {
     flex-flow: column-reverse;
 }
 
+/* Admin Menu Section Css */
 #adminmenu-wrapper {
     width: 160px;
     position: fixed;
@@ -145,6 +139,14 @@ button, input, select, textarea {
 .dashicons-settings::before {
     content: "\f108";
 }
+
+.dashicons-home::before {
+    content: "\f102";
+}
+.dashicons-new::before {
+    content: "\f132";
+}
+
 
 #adminmenu ul li a .menu-image {
     background-image: none!important;
@@ -267,5 +269,164 @@ button, input, select, textarea {
     position: absolute;
     left: -999px;
 }
+
+
+/* Admin Bar Section Css */
+#adminbar {
+    direction: ltr;
+    color: #c3c4c7;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Segoe UI", segoe;
+    line-height: 2.46153846;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    z-index: 99999;
+    background: #1d2327;
+}
+
+#wpadminbar * {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    position: static;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Segoe UI", segoe;
+    line-height: 2.46153846;
+    border-radius: 0;
+    box-sizing: content-box;
+    transition: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+#adminbar .quicklinks ul {
+    background: 0 0;
+    clear: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-indent: 0;
+    z-index: 99999;
+}
+
+#adminbar .quicklinks li {
+    float: left;
+}
+
+#adminbar .quicklinks li a {
+    height: 32px;
+    display: block;
+    margin: 0;
+    padding: 0 10px 0 5px;
+    color: #f0f0f1;
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    box-shadow: none;
+    transition: all .1s ease-in-out;
+}
+
+#adminbar .adminbar-image img {
+    max-width: 100%;
+    filter: grayscale(100%);
+}
+
+#adminbar .adminbar-image {
+    width: 25px;
+    height: 32px;
+    display: flex;
+    margin-right: 4px;
+    align-items: center; 
+    text-align: -webkit-center;
+    text-align: center;
+    position: relative;
+    float: left;
+    font: normal 20px/1 dashicons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: none!important;
+}
+
+#adminbar .adminbar-image.dashicons-home {
+    height: 27px;
+}
+
+#adminbar .adminbar-image::before {
+    width: 25px;
+    height: 20px;
+    color: #a7aaad;
+    color: rgba(240,246,252,.6);
+    top: 2px;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+#adminbar .adminbar-name {
+    height: 28px;
+    white-space: nowrap;
+    transition: all .1s ease-in-out;
+}
+
+#adminbar .adminbar-image.dashicons-post ~ .adminbar-name,
+#adminbar .adminbar-image.dashicons-comments ~ .adminbar-name {
+    opacity: .5;
+}
+
+#adminbar .quicklinks li a:hover {
+    background: #2c3338;
+}
+
+#adminbar .quicklinks li a:hover .adminbar-name,
+#adminbar .quicklinks li a:hover .adminbar-image::before {
+    color: #72aee6;
+}
+
+#adminbar .quicklinks li a.website-image {
+    padding: 0 5px 0 7px;
+}
+
+
+#adminbar .quicklinks .menu-right {
+    
+}
+
+#adminbar .quicklinks .menu-right li {
+    float: right;
+}
+
+#adminbar .quicklinks .menu-right li a {
+    padding: 0 8px;
+}
+
+#adminbar .quicklinks .menu-right li a .adminbar-image {
+    float: right;
+    margin-right: 0px;
+}
+
+#adminbar .quicklinks .menu-right li a .adminbar-image img {
+    width: auto;
+    height: 18px;
+    padding: 0;
+    border: 1px solid #8c8f94;
+    background: #f0f0f1;
+    line-height: 1.84615384;
+    vertical-align: middle;
+    margin: 0 0 0 6px;
+    float: none;
+    display: inline;
+}
+
+
 
 
