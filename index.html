@@ -16,47 +16,73 @@
             <div id="adminmenu-wrapper">
                 <div id="adminmenu">
                     <ul>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item active">
+                            <a href="./index.html">
                                 <div class="menu-image dashicons-dashboard"><br></div>
                                 <div class="menu-name">Dashboard</div>
-                                
                             </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="./index.html">Dashboard</a></li>
+                                <li class="active-item"><a href="./index.html">Home</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item">
+                            <a href="#">
                                 <div class="menu-image dashicons-post"><br></div>
                                 <div class="menu-name">Posts</div>
                             </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Post</a></li>
+                                <li><a href="#">All Posts</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Categories</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item">
+                            <a href="#">
                                 <div class="menu-image dashicons-media"><br></div>
                                 <div class="menu-name">Media</div>
                             </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Media</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Add New</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item">
+                            <a href="#">
                                 <div class="menu-image dashicons-comments"><br></div>
                                 <div class="menu-name">Comments</div>
                             </a>
                         </li>
-                        <li class="menu-separator">
-                            <div class="separator"></div>
-                        </li>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item">
+                            <a href="#">
                                 <div class="menu-image dashicons-users"><br></div>
                                 <div class="menu-name">Users</div>
                             </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Users</a></li>
+                                <li><a href="#">All Users</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Profile</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="menu-item">
+                        <li class="menu-item">
+                            <a href="#">
                                 <div class="menu-image dashicons-settings"><br></div>
                                 <div class="menu-name">Settings</div>
                             </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Settings</a></li>
+                                <li><a href="#">General</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="menu-collapse-item">
                             <button type="button" id="menu-collapse">
                                 <span class="collapse-button-icon"></span>
                                 <span class="collapse-button-label">Collapse menu</span>
@@ -71,6 +97,11 @@
                 <div class="quicklinks">
                     <!-- Adminbar Left Side Menu -->
                     <ul class="menu-left">
+                        <li class="menu-toggle-item">
+                            <a href="#">
+                                <span class="adminbar-image dashicons-menu"></span>
+                            </a>
+                        </li>
                         <li>
                             <a href="#" class="website-image">
                                 <span class="adminbar-image">

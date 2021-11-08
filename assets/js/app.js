@@ -24,5 +24,4 @@ window.onload = function() {
         adminmenu.classList.toggle("collapse");
     });
 
-
 }
