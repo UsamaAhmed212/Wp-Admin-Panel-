@@ -594,54 +594,54 @@ button, a, div {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#adminmenu-wrapper.collapse {
+.collapse #adminmenu-wrapper {
     width: 36px;
 }
 
-#adminmenu-wrapper.collapse .menu-name,
-#adminmenu-wrapper.collapse .collapse-button-label {
+.collapse #adminmenu-wrapper .menu-name,
+.collapse #adminmenu-wrapper .collapse-button-label {
     position: absolute;
     left: -999px;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li ul#admin-sub-menu {
+.collapse #adminmenu-wrapper #adminmenu ul li ul#admin-sub-menu {
     border-width: 4px;
     margin-top: -18px;
 }
 
-#adminmenu-wrapper.collapse  #adminmenu ul li.active::before {
+.collapse #adminmenu-wrapper  #adminmenu ul li.active::before {
     border-width: 4px ;
     margin-top: -4px;
 }
 
-#adminmenu-wrapper.collapse  #adminmenu ul li.active:hover::before {
+.collapse #adminmenu-wrapper  #adminmenu ul li.active:hover::before {
     display: none;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li:hover ul#admin-sub-menu {
+.collapse #adminmenu-wrapper #adminmenu ul li:hover ul#admin-sub-menu {
     top: 18px;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li ul#admin-sub-menu::before {
+.collapse #adminmenu-wrapper #adminmenu ul li ul#admin-sub-menu::before {
     left: -19px;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li ul#admin-sub-menu {
+.collapse #adminmenu-wrapper #adminmenu ul li ul#admin-sub-menu {
     position: absolute;
     left: 100%;
     top: -1000em;
     border-left: 5px solid transparent;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li.active ul#admin-sub-menu li.submenu-head {
+.collapse #adminmenu-wrapper #adminmenu ul li.active ul#admin-sub-menu li.submenu-head {
     display: block;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li a .menu-image{
+.collapse #adminmenu-wrapper #adminmenu ul li a .menu-image{
     transition: box-shadow .1s linear;
 }
 
-#adminmenu-wrapper.collapse #adminmenu ul li.active ul#admin-sub-menu li.submenu-head:hover {
+.collapse #adminmenu-wrapper #adminmenu ul li.active ul#admin-sub-menu li.submenu-head:hover {
     box-shadow: inset 4px 0 0 0 #FFFFFF;
 }
 
