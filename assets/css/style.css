@@ -648,3 +648,109 @@ button, a, div {
 }
 
 
+/*
+    ##Device = Mobiles, Tablets, Ipads (portrait)
+    ##Screen =  B/w 0px to 782px
+*/
+@media only screen and (max-width: 782px) { 
+body * {
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+/* #adminbar Css */
+#adminmenu-wrapper {
+    display: none;
+}
+
+#adminmenu-wrapper.open {
+    display: block!important;
+}
+
+#adminbar .quicklinks .menu-toggle-item {
+    display: block;
+}
+
+#adminbar .quicklinks .menu-toggle-item .dashicons-menu::before {
+    content: "\f228";
+    display: inline-block;
+    font: normal 40px/45px dashicons;
+    vertical-align: middle;
+    outline: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 44px;
+    width: 50px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#adminbar {
+    height: 46px;
+    min-width: 240px;
+}
+
+#adminbar .quicklinks span.adminbar-name {
+    display: none;
+}
+
+#adminbar .quicklinks > ul > li > a {
+    width: auto;
+    height: 46px;
+    padding: 0;
+    line-height: 3.28571428;
+}
+
+#adminbar .quicklinks li a.website-image {
+    padding: 0;
+}
+
+#adminbar .quicklinks ul  li a span.adminbar-image {
+    width: 52px;
+    height: 46px;
+    font: 40px/1 dashicons;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#adminbar .quicklinks ul  li a span.adminbar-image.dashicons-post,
+#adminbar .quicklinks ul  li a span.adminbar-image.dashicons-comments {
+    display: none;
+}
+
+#adminbar .adminbar-image img {
+    height: 80%;
+    margin: 0;
+}
+
+#adminbar .quicklinks ul  li a span.adminbar-image::before {
+    display: block;
+    top: 0;
+    line-height: 1.33333333;
+    height: 46px;
+    text-align: center;
+    width: 52px;
+}
+
+#adminbar .quicklinks .adminbar-image.dashicons-home {
+    top: -9%;
+}
+
+#adminbar .quicklinks .menu-right li a {
+    padding: 0;
+}
+
+#adminbar .quicklinks .menu-right li a .adminbar-image img {
+    height: 70%;
+    margin-left: 0;
+}
+
+
+
+}
+
