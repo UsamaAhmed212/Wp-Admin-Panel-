@@ -44,7 +44,7 @@ button, a, div {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-#wrapper {
+div#wrapper {
     display: flex;
     flex-flow: column-reverse;
 }
@@ -52,11 +52,11 @@ button, a, div {
 /* Admin Menu Section Css */
 #adminmenu-wrapper {
     width: 160px;
-    position: fixed;
+    position: absolute;
     top: 13px;
     bottom: -45px;
-    z-index: 1;
     background-color: #1d2327;
+    z-index: 1;
 }
 
 #adminmenu {
@@ -64,6 +64,7 @@ button, a, div {
     position: absolute;
     float: left;
     top: 22px;
+    background-color: #1d2327;
 }
 
 #adminmenu ul {

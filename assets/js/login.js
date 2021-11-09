@@ -16,6 +16,9 @@ window.addEventListener('DOMContentLoaded', function(event) {
             targetElement.classList.add("dashicons-visibility");
             button.parentElement.firstElementChild.setAttribute('type','password');
         }
+        
+        
+    
     });
     
 });

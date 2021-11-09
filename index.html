@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Style Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Home/index Css -->
+    <link rel="stylesheet" href="./assets/css/home.css">
 
     <title>Dashboard</title>
 </head>
@@ -187,9 +190,101 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- Content -->
+            <div id="content">
+                <div class="content-wrapper">
+                    <h1>Dashboard</h1>
+                    <!-- Welcome Panel -->
+                    <div class="welcome-panel">
+                        <div class="welcome-panel-content">
+                            <h2>Welcome to Control Panel!</h2>
+                            <p class="about-description">We’ve assembled some links to get you started:</p>
+                            <div class="welcome-panel-column-container">
+                                <div class="welcome-panel-column">
+                                    <h3>Get Started</h3>
+                                    <a href="#" class="button">Customize Your Site</a>
+                                </div>
+                                <div class="welcome-panel-column">
+                                    <h3>Next Steps</h3>
+                                    <ul>
+                                        <li><a href="#" class="write-blog">Write your first blog post</a></li>
+                                        <li><a href="#" class="view-site">Write your first blog post</a></li>
+                                    </ul>
+                                </div>
+                                <div class="welcome-panel-column">
+                                    <h3>More Actions</h3>
+                                    <ul>
+                                        <li><a href="#" class="write-blog">Write your first blog post</a></li>
+                                        <li><a href="#" class="view-site">Write your first blog post</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dashboard Widgets -->
+                    <div class="dashboard-widgets-wrapper">
+                        <div class="postbox-container">
+                            <div class="postbox-left">
+                                <div class="postbox">
+                                    <div class="postbox-header">
+                                        <h2>At a Glance 01</h2>
+                                        <button class="collapse">
+                                            <span class="toggle-indicator"></span>
+                                        </button>
+                                    </div>
+                                    <div class="inside">
+                                        <div class="main">
+                                            <ul>
+                                                <li><a href="#" class="post-count">10 Post</a></li>
+                                                <li><a href="#" class="comment-count">2 Comments</a></li>
+                                                <li><a href="#" class="media-count">10 Media</a></li>
+                                                <li><a href="#" class="user-count">2 Users</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="postbox-right">
+                                <div class="postbox">
+                                    <div class="postbox-header">
+                                        <h2>Activity</h2>
+                                        <button class="collapse">
+                                            <span class="toggle-indicator"></span>
+                                        </button>
+                                    </div>
+                                    <div class="inside">
+                                        <div class="main">
+                                            <div class="activity-widget">
+                                                <!-- <div class="no-activity"><p>No activity yet!</p></div> -->
+                                                <div class="published-posts">
+                                                    <h3>Recently Published</h3>
+                                                    <ul>
+                                                        <li>
+                                                            <span>Today, 5:41 am</span>
+                                                            <a href="#">New Post</a>
+                                                        </li>
+                                                        <li>
+                                                            <span>5 Nov, 6:07 am</span>
+                                                            <a href="#">Hello World</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <!-- index js -->
     <script src="assets/js/app.js"></script>
+
+    <!-- home js -->
+    <script src="assets/js/home.js"></script>
 </body>
 </html>

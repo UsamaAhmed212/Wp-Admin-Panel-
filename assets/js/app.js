@@ -1,5 +1,5 @@
 "use strict";
-window.onload = function() {
+window.addEventListener('load', function() {
     // #menu-collapse Click Then #container Section .collapse class toggle   
     const container = document.querySelector("#container");
     const collapse_button = document.querySelector("#menu-collapse");
@@ -20,5 +20,4 @@ window.onload = function() {
         adminmenu.classList.toggle("open");
     });
 
-
-}
+});
