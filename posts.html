@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Posts Css -->
+    <link rel="stylesheet" href="./assets/css/posts.css">
+
+    <title>Posts</title>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <!-- Admin Menu Section -->
+            <div id="adminmenu-wrapper">
+                <div id="adminmenu">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="./index.html">
+                                <div class="menu-image dashicons-dashboard"><br></div>
+                                <div class="menu-name">Dashboard</div>
+                            </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="./index.html">Dashboard</a></li>
+                                <li><a href="./index.html">Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="#">
+                                <div class="menu-image dashicons-post"><br></div>
+                                <div class="menu-name">Posts</div>
+                            </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Post</a></li>
+                                <li class="active-item"><a href="#">All Posts</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Categories</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <div class="menu-image dashicons-media"><br></div>
+                                <div class="menu-name">Media</div>
+                            </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Media</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Add New</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <div class="menu-image dashicons-comments"><br></div>
+                                <div class="menu-name">Comments</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <div class="menu-image dashicons-users"><br></div>
+                                <div class="menu-name">Users</div>
+                            </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Users</a></li>
+                                <li><a href="#">All Users</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <div class="menu-image dashicons-settings"><br></div>
+                                <div class="menu-name">Settings</div>
+                            </a>
+                            <!-- Admin Sub Menu -->
+                            <ul id="admin-sub-menu">
+                                <li class="submenu-head"><a href="">Settings</a></li>
+                                <li><a href="#">General</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-collapse-item">
+                            <button type="button" id="menu-collapse">
+                                <span class="collapse-button-icon"></span>
+                                <span class="collapse-button-label">Collapse menu</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Admin Bar Section -->
+            <div id="adminbar">
+                <div class="quicklinks">
+                    <!-- Adminbar Left Side Menu -->
+                    <ul class="menu-left">
+                        <li class="menu-toggle-item">
+                            <a href="#">
+                                <span class="adminbar-image dashicons-menu"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="website-image">
+                                <span class="adminbar-image">
+                                    <img src="assets/images/logo.png">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="adminbar-image dashicons-home"></span>
+                                <span class="adminbar-name">MySite</span>
+                            </a>
+                            <!-- Adminbar Sub Menu -->
+                            <div class="adminbar-sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Visit Site</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="adminbar-image dashicons-post"></span>
+                                <span class="adminbar-name">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="adminbar-image dashicons-comments"></span>
+                                <span class="adminbar-name">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="adminbar-image dashicons-new"></span>
+                                <span class="adminbar-name">New</span>
+                            </a>
+                            <!-- Adminbar Sub Menu -->
+                            <div class="adminbar-sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">User</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Adminbar Right Side Menu -->
+                    <ul class="menu-right">
+                        <li>
+                            <a href="#">
+                                <span class="adminbar-name">admin</span>
+                                <span class="adminbar-image">
+                                    <img src="assets/images/profile/admin.png">
+                                </span>
+                            </a>
+                            <!-- Adminbar Sub Menu -->
+                            <div class="adminbar-sub-menu">
+                                <ul>
+                                    <li class="adminbar-user-info">
+                                        <a href="#">
+                                            <img src="assets/images/profile/admin-big.png">
+                                            <span>admin</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div id="content">
+                <div class="content-wrapper">
+                    <h1>Posts</h1>
+                    <a href="#" class="button">Add New</a>
+                    <!-- <div class="message"> -->
+                        <!-- <p>1 post restored from the Trash. 
+                            <a href="#">Edit Post</a>
+                        </p> -->
+                        <!-- <p>1 post moved to the Trash. 
+                            <a href="#">Undo</a>
+                        </p>
+                        <button type="button" class="notice-dismiss"></button>
+                    </div> -->
+                    <div id="content-top">
+                        <ul>
+                            <li><a href="#" class="current">All <span class="count">(5)</span></a> |</li>
+                            <li><a href="#">Published <span class="count">(4)</span></a> |</li>
+                            <li><a href="#">Draft <span class="count">(1)</span></a></li>
+                            <li><a href="#">Trash <span class="count">(1)</span></a></li>
+                        </ul>
+                        <form action="" method="GET" id="search-box">
+                            <input type="search" name="seaech-input" value="" placeholder="Search">
+                            <input type="submit" id="search-posts" class="button" value="Search Posts">
+                        </form>
+                    </div>
+                    <div id="content-action">
+                        <form action="" method="GET" class="actions">
+                            <select name="action">
+                                <option value="bulk">Bulk actions</option>
+                                <option value="edit">Edit</option>
+                                <option value="trash">Move to Trash</option>
+                            </select>
+                            <input type="submit" id="action-apply" class="button action" value="Apply">
+                        </form>
+                        <div class="content-count">
+                            <span>5 items</span>
+                        </div>
+                    </div>
+                    <div id="content-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-all" type="checkbox"></td>
+                                    <th id="thumbnail">Thumbnail</th>
+                                    <th id="title">Title</th>
+                                    <th id="date">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-1" type="checkbox"></td>
+                                    <td class="post-thumbnail">
+                                        <a href="#"><img src="assets/images/posts-img/1.jpg" alt="Thumbnail"></a>
+                                    </td>
+                                    <td class="post-title">
+                                        <strong><a href="#">Free Ethical Hacking Training</a> &mdash; <span class="post-state">Draft</span></strong>
+                                        <div class="post-actions">
+                                            <span class="post-edit"><a href="#">Edit</a> | </span>
+                                            <span class="post-trash"><a href="#" class="submitdelete">Trash</a> | </span>
+                                            <span class="post-view"><a href="#">Preview</a></span>
+                                            <!-- Trash Content -->
+                                            <!-- <span class="post-untrash"><a href="#">Restore</a> | </span>
+                                            <span class="post-delete"><a href="#">Delete Permanently</a></span> -->
+                                        </div>
+                                    </td>
+                                    <td class="post-date">Last Modified<br/>2021/11/07 at 5:41 am</td>
+                                </tr>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-1" type="checkbox"></td>
+                                    <td class="post-thumbnail">
+                                        <a href="#"><img src="assets/images/posts-img/2.jpg" alt="Thumbnail"></a>
+                                    </td>
+                                    <td class="post-title">
+                                        <strong><a href="#">Photography Courses Online</a></strong>
+                                        <div class="post-actions">
+                                            <span class="post-edit"><a href="#">Edit</a> | </span>
+                                            <span class="post-trash"><a href="#" class="submitdelete">Trash</a> | </span>
+                                            <span class="post-view"><a href="#">View</a></span>
+                                            <!-- Trash Content -->
+                                            <!-- <span class="post-untrash"><a href="#">Restore</a> | </span>
+                                            <span class="post-delete"><a href="#">Delete Permanently</a></span> -->
+                                        </div>
+                                    </td>
+                                    <td class="post-date">Published<br/>2021/11/07 at 5:40 am</td>
+                                </tr>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-1" type="checkbox"></td>
+                                    <td class="post-thumbnail">
+                                        <a href="#"><img src="assets/images/posts-img/3.jpg" alt="Thumbnail"></a>
+                                    </td>
+                                    <td class="post-title">
+                                        <strong><a href="#">Jellyfish Power</a></strong>
+                                        <div class="post-actions">
+                                            <span class="post-edit"><a href="#">Edit</a> | </span>
+                                            <span class="post-trash"><a href="#" class="submitdelete">Trash</a> | </span>
+                                            <span class="post-view"><a href="#">View</a></span>
+                                            <!-- Trash Content -->
+                                            <!-- <span class="post-untrash"><a href="#">Restore</a> | </span>
+                                            <span class="post-delete"><a href="#">Delete Permanently</a></span> -->
+                                        </div>
+                                    </td>
+                                    <td class="post-date">Published<br/>2021/11/05 at 5:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-1" type="checkbox"></td>
+                                    <td class="post-thumbnail">
+                                        <a href="#"><img src="assets/images/posts-img/4.jpg" alt="Thumbnail"></a>
+                                    </td>
+                                    <td class="post-title">
+                                        <strong><a href="#">Content Writing</a></strong>
+                                        <div class="post-actions">
+                                            <span class="post-edit"><a href="#">Edit</a> | </span>
+                                            <span class="post-trash"><a href="#" class="submitdelete">Trash</a> | </span>
+                                            <span class="post-view"><a href="#">View</a></span>
+                                            <!-- Trash Content -->
+                                            <!-- <span class="post-untrash"><a href="#">Restore</a> | </span>
+                                            <span class="post-delete"><a href="#">Delete Permanently</a></span> -->
+                                        </div>
+                                    </td>
+                                    <td class="post-date">Published<br/>2021/11/03 at 1:05 pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="check-box"><input id="check-box-1" type="checkbox"></td>
+                                    <td class="post-thumbnail">
+                                        <a href="#"><img src="assets/images/posts-img/5.jpg" alt="Thumbnail"></a>
+                                    </td>
+                                    <td class="post-title">
+                                        <strong><a href="#">Learn Programming</a></strong>
+                                        <div class="post-actions">
+                                            <span class="post-edit"><a href="#">Edit</a> | </span>
+                                            <span class="post-trash"><a href="#" class="submitdelete">Trash</a> | </span>
+                                            <span class="post-view"><a href="#">View</a></span>
+                                            <!-- Trash Content -->
+                                            <!-- <span class="post-untrash"><a href="#">Restore</a> | </span>
+                                            <span class="post-delete"><a href="#">Delete Permanently</a></span> -->
+                                        </div>
+                                    </td>
+                                    <td class="post-date">Published<br/>2021/11/04 at 2:30 am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index js -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Posts js -->
+    <script src="assets/js/posts.js"></script>
+</body>
+</html>
